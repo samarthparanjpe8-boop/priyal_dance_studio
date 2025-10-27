@@ -20,7 +20,157 @@ body {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
 }
 
+.logo {* {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: radial-gradient(circle at top, #1a001a, #0b0012);
+    color: bisque;
+}
+
+.navbar {
+    background: linear-gradient(90deg, #240046, #3c096c, #5a189a);
+    padding: 0 20px;
+    height: 95px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #e0b0ff;
+}
+
 .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo h2 {
+    font-size: 1.5rem;
+    color: bisque;
+}
+
+.logo img {
+    height: 70px;
+    width: 90px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover img {
+    transform: scale(1.05);
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.links a {
+    padding: 10px;
+    margin: 5px;
+    text-decoration: none;
+    color: bisque;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.links a:hover {
+    color: #ff66c4;
+    transform: translateY(-3px);
+}
+
+.links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0%;
+    height: 3px;
+    background-color: #ff66c4;
+    transition: width 0.3s ease;
+    border-radius: 10px;
+}
+
+.links a:hover::after {
+    width: 100%;
+}
+
+/* Hamburger menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    gap: 5px;
+}
+
+.hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: bisque;
+    border-radius: 2px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+    .navbar {
+        justify-content: space-between;
+        padding: 0 15px;
+    }
+
+    .hamburger {
+        display: flex;
+        order: 1;
+    }
+
+    .logo {
+        order: 2;
+    }
+
+    .logo h2 {
+        font-size: 1.2rem;
+    }
+
+    .links {
+        display: none;
+        position: absolute;
+        top: 95px;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: linear-gradient(180deg, #3c096c, #240046);
+        text-align: center;
+        padding: 15px 0;
+        z-index: 10;
+        border-top: 2px solid #ff66c4;
+    }
+
+    .links.active {
+        display: flex;
+    }
+
+    .links a {
+        display: block;
+        padding: 12px 0;
+        margin: 5px 0;
+        font-size: 1.1rem;
+    }
+
+    .links a:hover {
+        color: #ff66c4;
+        transform: none;
+    }
+
+    .links a::after {
+        display: none;
+    }
+}
+
     display: inline-flex;
     align-items: center;
     gap: 10px;

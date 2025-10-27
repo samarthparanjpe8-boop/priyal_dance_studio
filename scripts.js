@@ -1,6 +1,3 @@
-const menuToggle = document.getElementById("menu-toggle");
-const dropdown = document.getElementById("dropdown-menu");
-
-menuToggle.addEventListener("click", () => {
-dropdown.classList.toggle("active");
-});
+function toggleMenu() {
+    document.getElementById('nav-links').classList.toggle('active');
+}

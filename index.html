@@ -8,12 +8,19 @@
 </head>
 <body>
     <div class="Home">
-        <div class="navbar">
-            <div class="logo">
-                <img src="images/priyal_dance_studio_logo.png" alt="Priyal Dance Studio">
-                <h2>Priyal Dance Studio</h2>
+        <nav class="navbar">
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
             </div>
-            <div class="links">
+
+            <div class="logo">
+                <h2>Priyal Dance Studio</h2>
+                <img src="images/priyal_dance_studio_logo.png" alt="Priyal Dance Studio Logo" class="LogoImage">
+            </div>
+
+            <div class="links" id="nav-links">
                 <a href="#">Home</a>
                 <a href="#">Classes</a>
                 <a href="#">Schedule</a>
@@ -21,18 +28,9 @@
                 <a href="#">About</a>
                 <a href="#">Contact</a>
             </div>
-            <div class="menu-icon" id="menu-toggle">☰</div>
-        </div>
-
-        <div class="dropdown" id="dropdown-menu">
-            <a href="#">Classes</a>
-            <a href="#">Schedule</a>
-            <a href="#">Instructor</a>
-            <a href="#">About</a>
-            <a href="#">Contact</a>
-        </div>
+        </nav>
     </div>
-<script src="scripts.js"></script>
 
+    <script src="scripts.js"></script>
 </body>
 </html>
