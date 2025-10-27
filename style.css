@@ -88,55 +88,68 @@ body {
     }
 }
 
+.menu-icon {
+    display: none;
+    font-size: 1.8rem;
+    color: bisque;
+    cursor: pointer;
+}
+
+/* Dropdown menu */
+.dropdown {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(180deg, #7b2ff7, #f107a3);
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    animation: fadeIn 0.3s ease forwards;
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: bisque;
+    padding: 12px 0;
+    width: 100%;
+    text-align: center;
+    transition: background 0.3s ease;
+}
+
+.dropdown a:hover {
+    background: rgba(255, 111, 243, 0.2);
+}
+
+.dropdown.active {
+    display: flex;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 @media (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        height: auto;
-        padding: 15px 20px;
-        text-align: center;
-        border-radius: 0;
-        background: linear-gradient(180deg, #7b2ff7, #f107a3);
+    .links a:not(:first-child) {
+        display: none;
     }
 
-    .logo {
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar {
+        flex-direction: row;
+        height: auto;
+        padding: 15px 20px;
     }
 
     .logo img {
         height: 80px;
         width: 100px;
-        margin-bottom: 5px;
     }
 
     .logo h2 {
-        font-size: 1.4rem;
-        text-align: center;
-        margin-bottom: 10px;
-    }
-
-    .links {
-        flex-direction: column;
-        gap: 12px;
-        width: 100%;
-    }
-
-    .links a {
-        font-size: 1.1rem;
-        display: inline-block;
-        width: 100%;
-        padding: 10px;
-        border-radius: 8px;
-        transition: background 0.3s ease, transform 0.2s ease;
-    }
-
-    .links a:active {
-        background: rgba(255, 111, 243, 0.2);
-        transform: scale(0.96);
-        color: #ff6ff3;
+        font-size: 1.3rem;
     }
 }
 
@@ -147,11 +160,6 @@ body {
     }
 
     .logo h2 {
-        font-size: 1.2rem;
-    }
-
-    .links a {
-        font-size: 1rem;
-        padding: 8px;
+        font-size: 1.1rem;
     }
 }
