@@ -13,7 +13,6 @@ body {
 .navbar {
     background: linear-gradient(90deg, #7b2ff7, #f107a3);
     padding: 10px 25px;
-    border-radius: 10px;
     height: 95px;
     display: flex;
     justify-content: space-between;
