@@ -7,138 +7,62 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="Home">
+        <nav class="navbar">
+            <div class="hamburger" id="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+            <h2 class="nav-title">Priyal Dance Studio</h2>
+            <div class="logo">
+                <img src="images/priyal_dance_studio_logo.png" alt="Priyal Dance Studio Logo" class="LogoImage">
+            </div>
+        </nav>
 
-<!-- NAVBAR -->
-<nav class="navbar">
-    <div class="hamburger" id="hamburger" onclick="toggleMenu()">
-        <div></div><div></div><div></div>
-    </div>
-    <h2 class="nav-title">Priyal Dance Studio</h2>
-    <div class="logo">
-        <img src="images/priyal_dance_studio_logo.png" alt="">
-    </div>
-</nav>
-
-<div class="links" id="nav-links">
-    <a href="#">Home</a>
-    <a href="#Classes">Classes</a>
-    <a href="#Schedule">Schedule</a>
-    <a href="#Instructor">Instructor</a>
-    <a href="#About">About</a>
-    <a href="#Contact">Contact</a>
-</div>
-
-<!-- INTRO -->
-<section class="Introduction">
-    <div class="Intro-text">
-        <h2>Welcome to Priyal Dance Studio</h2>
-        <h3 id="typing-text"></h3>
-        <p>
-            Rooted in Indian Classical Dance, especially <b>Kathak</b>, we nurture creativity,
-            discipline and grace under <b>Smt. Priyal Najpande Gadkar</b>.
-        </p>
+        <div class="links" id="nav-links">
+            <a href="#">Home</a>
+            <a href="#Classes">Classes</a>
+            <a href="#">Schedule</a>
+            <a href="#">Instructor</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </div>
     </div>
 
-    <div class="Intro-carousel">
-        <div class="slide fade"><img src="images/carousel-1.png"></div>
-        <div class="slide fade"><img src="images/carousel-2.png"></div>
-        <div class="slide fade"><img src="images/carousel-3.jpg"></div>
-    </div>
-</section>
+    <div class="Introduction">
+        <div class="Intro-text">
+            <h2>Welcome to Priyal Dance Studio & <br> Centre for Performing Arts</h2>
+            <h3 id="typing-text"></h3>
+            <h4>
+                Rooted in the grace and rhythm of Indian Classical Dance, <br>especially Kathak,
+                our studio is a space where passion, discipline, and creativity come together.
+                Under the guidance of <b>Smt. Priyal Najpande Gadkar</b>,<br>
+                we inspire dancers of all ages to explore the beauty of movement,
+                the power of storytelling, and the essence of culture.
+            </h4>
+        </div>
 
-<!-- CLASSES -->
-<section class="Classes" id="Classes">
-    <h1>Kathak Classes</h1>
-    <p>Choose your level & begin your journey</p>
-
-    <div class="Card-container">
-        <div class="card tilt"><img src="images/1.jpg"><h2>Beginner</h2><p>10AM - 12PM</p></div>
-        <div class="card tilt"><img src="images/2.jpg"><h2>Intermediate</h2><p>1PM - 3PM</p></div>
-        <div class="card tilt"><img src="images/3.jpg"><h2>Advanced</h2><p>5PM - 7PM</p></div>
-        <div class="card tilt"><img src="images/4.jpg"><h2>Kids Batch</h2><p>4PM - 5PM</p></div>
-    </div>
-</section>
-
-<!-- SCHEDULE -->
-<section class="Schedule" id="Schedule">
-    <h1>Class Schedule</h1>
-
-    <div class="schedule-table">
-        <div class="row head"><span>Level</span><span>Days</span><span>Time</span></div>
-        <div class="row"><span>Beginner</span><span>M-W-F</span><span>10 AM - 12 PM</span></div>
-        <div class="row"><span>Intermediate</span><span>T-Th-S</span><span>1 PM - 3 PM</span></div>
-        <div class="row"><span>Advanced</span><span>Mon - Sat</span><span>5 PM - 7 PM</span></div>
-    </div>
-</section>
-
-<!-- INSTRUCTOR -->
-<section class="Instructor" id="Instructor">
-    <div class="Instructor-info">
-        <h1>Meet The Instructor</h1>
-        <p><b>Smt. Priyal Najpande Gadkar</b> brings decades of training, stage knowledge and storytelling artistry into her teaching.</p>
-    </div>
-    <img class="Instructor-img tilt" src="images/9.jpg" alt="">
-</section>
-
-<!-- ABOUT -->
-<section class="About" id="About">
-    <h1>About The Studio</h1>
-    <p>
-Priyal Dance Studio & Centre for Performing Arts is a premier institution dedicated to preserving and promoting Indian Classical Dance, with a primary focus on Kathak. Founded by Smt. Priyal Najpande Gadkar, an accomplished Kathak artist, Doordarshan-graded performer, and recipient of prestigious national scholarships (CCRT & SPIC MACAY), our institute aims to nurture dancers of all ages with strong technique, creativity, and cultural understanding.
-
-With centres in Nagpur (India) and expanding globally through online learning, we offer high-quality dance education rooted in tradition while embracing innovative teaching methods.
-Our vision is to empower students to learn, perform, and build successful careers in the world of performing arts.</p>
-</section>
-
-<!-- CONTACT -->
-<section class="Contact" id="Contact">
-  <div class="contact-container">
-
-    <!-- LEFT: INFO -->
-    <div class="contact-info-box">
-      <h2>Contact Us</h2>
-      <p>We’d love to help you begin your journey in Kathak.</p>
-
-      <ul class="contact-list">
-        <li><b>📍 Address:</b> Priyal Dance Studio, Your City</li>
-        <li><b>📞 Phone:</b> +91 98765 43210</li>
-        <li><b>📧 Email:</b> priyaldancestudio@example.com</li>
-      </ul>
-
-      <div class="contact-socials">
-        <a href="https://instagram.com" target="_blank" class="social-icon"><img src="images/insta.jpg" alt=""></a>
-        <a href="https://facebook.com" target="_blank" class="social-icon"><img src="images/facebook.png" alt=""></a>
-        <a href="https://wa.me/919876543210" target="_blank" class="social-icon"><img src="images/X.png" alt=""></a>
-        <a href="https://youtube.com" target="_blank" class="social-icon"><img src="images/yt.png" alt=""></a>
-      </div>
+        <div class="Intro-carousel">
+            <div class="slide fade">
+                <img src="images/carousel-1.png" alt="">
+            </div>
+            <div class="slide fade">
+                <img src="images/carousel-2.png" alt="">
+            </div>
+            <div class="slide fade">
+                <img src="images/carousel-3.jpg" alt="">
+            </div>
+        </div>
     </div>
 
-    <!-- RIGHT: FORM -->
-    <form class="contact-form" onsubmit="event.preventDefault(); alert('Message Sent!');">
+    <div class="Classes" id="Classes">
+        <div class="Class-head">
+        <h1>Kathak Classes</h1>
+        <p>From beginners to advanced dancers , find the perfect class for your journey <br> in kathak</p>
+        </div>
+    </div>
 
-      <div class="input-group">
-        <label>Your Name</label>
-        <input type="text" required placeholder="Enter your name">
-      </div>
-
-      <div class="input-group">
-        <label>Your Email</label>
-        <input type="email" required placeholder="Enter your email">
-      </div>
-
-      <div class="input-group">
-        <label>Your Message</label>
-        <textarea required placeholder="Write your message..."></textarea>
-      </div>
-
-      <button type="submit" class="send-btn">Send Message</button>
-
-    </form>
-
-  </div>
-</section>
-
-
-<script src="scripts.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
