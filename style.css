@@ -295,3 +295,27 @@ body {
         font-size: 1.3rem;
     }
 }
+
+.Classes{
+    background: #1c0247;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+}
+
+.Class-head{
+    padding: 0px;
+    margin: 0px;
+}
+
+.Class-head h1{
+    padding: 0px;
+    margin: 0px;
+    padding-top: 25px;
+    padding-bottom: 3px;
+    font-size: 3rem;
+}
+
+.Class-head p{
+    font-size: 1.20rem;
+}
