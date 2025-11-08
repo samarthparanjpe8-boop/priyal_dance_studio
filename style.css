@@ -19,7 +19,7 @@ html,body{margin:0;padding:0;scroll-behavior:smooth;background:var(--bg);color:v
 
 /* ---------- Navbar ---------- */
 .navbar{
-  position:sticky; top:0; z-index:1000;
+  position:relative; top:0; z-index:1000;
   height:92px; display:flex; align-items:center; justify-content:center;
   background:linear-gradient(90deg, var(--primary), var(--primary-2));
   border-bottom:1px solid var(--border);
@@ -46,14 +46,20 @@ html,body{margin:0;padding:0;scroll-behavior:smooth;background:var(--bg);color:v
 
 /* Menu links (mobile first) */
 .links{
-  list-style:none; margin:0; padding:0;
+  list-style:none;
+  margin:0; padding:0;
   display:flex; flex-direction:column; align-items:center; gap:8px;
+
   position:absolute; left:0; top:92px; width:100%;
   background:var(--panel);
   border-bottom:1px solid var(--border);
+
   max-height:0; overflow:hidden; opacity:0; transform:translateY(-8px);
   transition:max-height .35s ease, opacity .35s ease, transform .35s ease;
+
+  z-index: 2000; /* ✅ Add this */
 }
+
 .links a{
   color:var(--text); text-decoration:none; padding:14px 16px; width:100%; text-align:center; display:block;
   transition:.2s ease;
