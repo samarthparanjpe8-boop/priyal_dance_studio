@@ -13,15 +13,15 @@ const Contact = ({ id }) => {
         <h2 className="text-4xl md:text-5xl font-serif font-bold mb-12 text-center text-accent">
           Contact
         </h2>
-        <div className="glass rounded-3xl p-8 md:p-12">
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="space-y-6">
+        <div className="glass rounded-3xl p-8 md:p-12 overflow-hidden">
+          <div className="grid md:grid-cols-2 gap-6 md:gap-8">
+            <div className="space-y-4 md:space-y-6">
               <motion.a
                 href="tel:+918319103613"
                 whileHover={{ scale: 1.05 }}
-                className="flex w-full items-center gap-4 p-4 sm:p-5 glass rounded-xl hover:bg-accent/10 transition-colors min-h-[72px]"
+                className="flex w-full items-center gap-4 p-3 sm:p-5 glass rounded-lg md:rounded-xl hover:bg-accent/10 transition-colors min-h-[60px]"
               >
-                <div className="text-3xl">📞</div>
+                <div className="text-2xl sm:text-3xl">📞</div>
                 <div>
                   <p className="text-sm text-text/60">Phone</p>
                   <p className="text-lg text-text">+91 8319103613</p>
@@ -31,9 +31,9 @@ const Contact = ({ id }) => {
               <motion.a
                 href="mailto:samarthparanjpe01@gmail.com"
                 whileHover={{ scale: 1.05 }}
-                className="flex w-full items-center gap-4 p-4 sm:p-5 glass rounded-xl hover:bg-accent/10 transition-colors min-h-[72px]"
+                className="flex w-full items-center gap-4 p-3 sm:p-5 glass rounded-lg md:rounded-xl hover:bg-accent/10 transition-colors min-h-[60px]"
               >
-                <div className="text-3xl">📧</div>
+                <div className="text-2xl sm:text-3xl">📧</div>
                 <div>
                   <p className="text-sm text-text/60">Email</p>
                   <p className="text-lg text-text">priyaldancestudio@gmail.com</p>
@@ -45,9 +45,9 @@ const Contact = ({ id }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
-                className="flex w-full items-center gap-4 p-4 sm:p-5 glass rounded-xl hover:bg-accent/10 transition-colors min-h-[72px]"
+                className="flex w-full items-center gap-4 p-3 sm:p-5 glass rounded-lg md:rounded-xl hover:bg-accent/10 transition-colors min-h-[60px]"
               >
-                <div className="text-3xl">💬</div>
+                <div className="text-2xl sm:text-3xl">💬</div>
                 <div>
                   <p className="text-sm text-text/60">WhatsApp</p>
                   <p className="text-lg text-text">+91 8319103613</p>
@@ -59,9 +59,9 @@ const Contact = ({ id }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
-                className="flex w-full items-center gap-4 p-4 sm:p-5 glass rounded-xl hover:bg-accent/10 transition-colors min-h-[72px]"
+                className="flex w-full items-center gap-4 p-3 sm:p-5 glass rounded-lg md:rounded-xl hover:bg-accent/10 transition-colors min-h-[60px]"
               >
-                <div className="text-3xl">📷</div>
+                <div className="text-2xl sm:text-3xl">📷</div>
                 <div>
                   <p className="text-sm text-text/60">Instagram</p>
                   <p className="text-lg text-text">@priyal_dance_studio</p>
@@ -70,7 +70,7 @@ const Contact = ({ id }) => {
             </div>
 
             <div className="flex flex-col justify-center mt-6 md:mt-0">
-              <div className="glass rounded-xl p-6">
+              <div className="glass rounded-lg md:rounded-xl p-5 md:p-6">
                 <h3 className="text-2xl font-serif font-semibold mb-4 text-accent">
                   Visit Us
                 </h3>

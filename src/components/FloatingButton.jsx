@@ -15,7 +15,7 @@ const FloatingButton = ({ onClick, disabled = false, hideOnContactInView = false
       style={{ boxShadow: '0 8px 32px rgba(47, 47, 47, 0.56)' }}
       aria-label="Open interest form"
     >
-      Register Here
+      register here
     </motion.button>
   )
 } 
