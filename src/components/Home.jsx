@@ -30,7 +30,7 @@ const Home = ({ id }) => {
   }, [slides.length])
 
   return (
-    <section id={id} className="relative min-h-screen flex items-center justify-center overflow-hidden">
+    <section id={id} className="relative min-h-screen flex items-center justify-center overflow-hidden py-12">
       <AnimatePresence mode="wait">
         <motion.div
           key={currentSlide}
@@ -49,7 +49,7 @@ const Home = ({ id }) => {
         </motion.div>
       </AnimatePresence>
 
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
         <AnimatePresence mode="wait">
           <motion.div
             key={currentSlide}
@@ -58,10 +58,10 @@ const Home = ({ id }) => {
             exit={{ opacity: 0, y: -30 }}
             transition={{ duration: 0.8, delay: 0.2 }}
           >
-            <h1 className="text-5xl md:text-7xl font-serif font-bold mb-6 text-text drop-shadow-lg">
+            <h1 className="text-3xl sm:text-5xl md:text-7xl font-serif font-bold mb-6 text-text drop-shadow-lg">
               {slides[currentSlide].heading}
             </h1>
-            <p className="text-xl md:text-2xl text-text/90 font-light">
+            <p className="text-base sm:text-lg md:text-2xl text-text/90 font-light">
               {slides[currentSlide].subheading}
             </p>
           </motion.div>

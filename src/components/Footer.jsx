@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 
 const Footer = () => {
   return (
-    <footer className="py-8 px-6 border-t border-accent/20 glass mt-20">
+    <footer className="py-8 px-6 border-t border-accent/20 glass mt-20 lg:ml-64 lg:px-8">
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
         <p className="text-text/60 text-sm">
           © 2025 Priyal Dance Studio • All Rights Reserved

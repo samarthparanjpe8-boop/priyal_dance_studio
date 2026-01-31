@@ -22,8 +22,12 @@ const Navbar = ({ activeSection, scrollToSection }) => {
   return (
     <>
       {/* Desktop Fixed Left Navbar */}
-      <nav className="hidden lg:flex fixed left-0 top-0 h-full w-64 z-50 flex-col items-center justify-center glass border-r border-accent/20">
+      <nav className="hidden lg:flex fixed left-0 top-0 h-full w-64 z-50 flex-col items-start justify-start glass border-r border-accent/20">
         <div className="flex flex-col gap-6 w-full px-6">
+          <div className="pt-6 pb-2 flex items-center">
+            <img src="/images/priyal_dance_studio_logo.png" alt="Priyal Dance Studio logo" className="w-32 h-auto object-contain" />
+          </div>
+          <div className="h-px bg-accent/20 my-2 w-full" />
           {navItems.map((item) => (
             <button
               key={item.id}
@@ -78,7 +82,7 @@ const Navbar = ({ activeSection, scrollToSection }) => {
         }}
         className="lg:hidden fixed inset-0 z-40 glass backdrop-blur-xl"
       >
-        <div className="flex flex-col items-center justify-center h-full gap-6 px-8">
+        <div className="flex flex-col items-center justify-center h-full gap-8 px-8 sm:px-12">
           {navItems.map((item) => (
             <button
               key={item.id}
@@ -95,24 +99,7 @@ const Navbar = ({ activeSection, scrollToSection }) => {
         </div>
       </motion.div>
 
-      {/* Bottom Mobile Nav (Alternative) */}
-      <nav className="lg:hidden fixed bottom-0 left-0 right-0 z-40 glass border-t border-accent/20">
-        <div className="flex justify-around items-center py-2 px-2 overflow-x-auto">
-          {navItems.map((item) => (
-            <button
-              key={item.id}
-              onClick={() => handleNavClick(item.id)}
-              className={`flex flex-col items-center gap-1 p-2 rounded-lg transition-colors whitespace-nowrap ${
-                activeSection === item.id
-                  ? 'text-accent'
-                  : 'text-text/70'
-              }`}
-            >
-              <span className="text-xs font-medium">{item.label}</span>
-            </button>
-          ))}
-        </div>
-      </nav>
+      {/* Bottom Mobile Nav removed (using overlay menu instead) */}
     </>
   )
 }

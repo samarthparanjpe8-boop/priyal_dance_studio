@@ -2,7 +2,7 @@ import { motion } from 'framer-motion'
 
 const Contact = ({ id }) => {
   return (
-    <section id={id} className="min-h-screen py-20 px-6 lg:px-20">
+    <section id={id} className="min-h-screen pt-20 pb-40 px-6 lg:px-20 lg:pb-20 scroll-mt-24">
       <motion.div
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -19,7 +19,7 @@ const Contact = ({ id }) => {
               <motion.a
                 href="tel:+918319103613"
                 whileHover={{ scale: 1.05 }}
-                className="flex items-center gap-4 p-4 glass rounded-xl hover:bg-accent/10 transition-colors"
+                className="flex w-full items-center gap-4 p-4 sm:p-5 glass rounded-xl hover:bg-accent/10 transition-colors min-h-[72px]"
               >
                 <div className="text-3xl">📞</div>
                 <div>
@@ -31,7 +31,7 @@ const Contact = ({ id }) => {
               <motion.a
                 href="mailto:samarthparanjpe01@gmail.com"
                 whileHover={{ scale: 1.05 }}
-                className="flex items-center gap-4 p-4 glass rounded-xl hover:bg-accent/10 transition-colors"
+                className="flex w-full items-center gap-4 p-4 sm:p-5 glass rounded-xl hover:bg-accent/10 transition-colors min-h-[72px]"
               >
                 <div className="text-3xl">📧</div>
                 <div>
@@ -45,7 +45,7 @@ const Contact = ({ id }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
-                className="flex items-center gap-4 p-4 glass rounded-xl hover:bg-accent/10 transition-colors"
+                className="flex w-full items-center gap-4 p-4 sm:p-5 glass rounded-xl hover:bg-accent/10 transition-colors min-h-[72px]"
               >
                 <div className="text-3xl">💬</div>
                 <div>
@@ -59,7 +59,7 @@ const Contact = ({ id }) => {
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05 }}
-                className="flex items-center gap-4 p-4 glass rounded-xl hover:bg-accent/10 transition-colors"
+                className="flex w-full items-center gap-4 p-4 sm:p-5 glass rounded-xl hover:bg-accent/10 transition-colors min-h-[72px]"
               >
                 <div className="text-3xl">📷</div>
                 <div>
@@ -69,7 +69,7 @@ const Contact = ({ id }) => {
               </motion.a>
             </div>
 
-            <div className="flex flex-col justify-center">
+            <div className="flex flex-col justify-center mt-6 md:mt-0">
               <div className="glass rounded-xl p-6">
                 <h3 className="text-2xl font-serif font-semibold mb-4 text-accent">
                   Visit Us

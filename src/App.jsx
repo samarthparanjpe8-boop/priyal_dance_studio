@@ -37,6 +37,23 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  // Hide floating button when Contact section is in view to avoid overlap on mobile
+  const [isContactInView, setIsContactInView] = useState(false)
+  useEffect(() => {
+    const contactEl = document.getElementById('contact')
+    if (!contactEl) return
+    const obs = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          setIsContactInView(entry.isIntersecting)
+        })
+      },
+      { threshold: 0.6 }
+    )
+    obs.observe(contactEl)
+    return () => obs.disconnect()
+  }, [])
+
   const scrollToSection = (sectionId) => {
     const element = document.getElementById(sectionId)
     if (element) {
@@ -57,7 +74,7 @@ function App() {
         <Events id="events" />
         <Contact id="contact" />
       </main>
-      <FloatingButton onClick={() => setIsModalOpen(true)} disabled={isModalOpen} />
+      <FloatingButton onClick={() => setIsModalOpen(true)} disabled={isModalOpen} hideOnContactInView={isContactInView} />
       <Footer />
       <AnimatePresence>
         {isModalOpen && (
