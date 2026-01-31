@@ -277,10 +277,6 @@ const InterestModal = ({ onClose }) => {
                 <option value="Beginner Classes">Beginner Classes</option>
                 <option value="Intermediate Classes">Intermediate Classes</option>
                 <option value="Advanced Classes">Advanced Classes</option>
-                <option value="Kids Batch">Kids Batch</option>
-                <option value="Workshop">Workshop</option>
-                <option value="Performance">Performance</option>
-                <option value="Other">Other</option>
               </select>
             </div>
 
