@@ -8,11 +8,15 @@ const Gallery = ({ id }) => {
     '/images/12.jpg',
     '/images/7.jpg',
     '/images/8.jpg',
+    '/images/14.jpg',
     '/images/9.jpg',
     '/images/11.jpg',
+    '/images/15.jpg',
     '/images/IMG_2557.png',
+    '/images/13.jpg',
     '/images/carousel-2.png',
     '/images/carousel-3.jpg',
+    '/images/16.JPG',
   ]
 
   return (
@@ -27,7 +31,7 @@ const Gallery = ({ id }) => {
         <h2 className="text-4xl md:text-5xl font-serif font-bold mb-12 text-center text-accent">
           Gallery
         </h2>
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 items-center justify-items-center">
           {images.map((image, index) => (
             <motion.div
               key={index}
@@ -36,7 +40,7 @@ const Gallery = ({ id }) => {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
               whileHover={{ scale: 1.05 }}
-              className="glass rounded-xl overflow-hidden cursor-pointer aspect-square"
+              className="glass rounded-xl overflow-hidden cursor-pointer aspect-square w-full max-w-xs mx-auto"
               onClick={() => setSelectedImage(image)}
             >
               <img

@@ -46,7 +46,7 @@ const Portfolio = ({ id }) => {
         <h2 className="text-4xl md:text-5xl font-serif font-bold mb-12 text-center text-accent">
           Portfolio
         </h2>
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 items-center justify-items-center">
           {portfolioSections.map((section, index) => (
             <motion.div
               key={index}
@@ -54,15 +54,15 @@ const Portfolio = ({ id }) => {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="glass rounded-2xl p-6"
+              className="glass rounded-2xl p-6 flex flex-col items-center text-center w-full max-w-md mx-auto"
             >
               <h3 className="text-2xl font-serif font-semibold mb-4 text-accent">
                 {section.title}
               </h3>
               <ul className="space-y-2 text-text/80">
                 {section.items.map((item, itemIndex) => (
-                  <li key={itemIndex} className="flex items-start gap-2">
-                    <span className="text-accent mt-1">•</span>
+                  <li key={itemIndex} className="flex items-center gap-2 justify-center">
+                    <span className="text-accent">•</span>
                     <span>{item}</span>
                   </li>
                 ))}

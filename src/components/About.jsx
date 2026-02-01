@@ -10,7 +10,7 @@ const About = ({ id }) => {
         transition={{ duration: 0.8 }}
         className="max-w-4xl mx-auto"
       >
-        <div className="glass rounded-3xl p-8 md:p-12">
+        <div className="glass rounded-3xl p-8 md:p-12 text-center flex flex-col items-center">
           <h2 className="text-4xl md:text-5xl font-serif font-bold mb-8 text-accent">
             About
           </h2>

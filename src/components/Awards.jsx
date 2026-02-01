@@ -24,7 +24,7 @@ const Awards = ({ id }) => {
         <h2 className="text-4xl md:text-5xl font-serif font-bold mb-12 text-center text-accent">
           Awards & Recognition
         </h2>
-        <div className="space-y-4">
+        <div className="space-y-4 grid gap-4 items-center justify-items-center">
           {awards.map((award, index) => (
             <motion.div
               key={index}
@@ -32,11 +32,11 @@ const Awards = ({ id }) => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: index * 0.1 }}
-              className="glass rounded-xl p-6"
+              className="glass rounded-xl p-6 w-full max-w-md mx-auto md:max-w-none md:mx-0"
             >
-              <div className="flex items-center gap-4">
+              <div className="flex items-center gap-4 md:justify-between">
                 <div className="text-3xl text-accent">🏆</div>
-                <p className="text-lg text-text/90">{award}</p>
+                <p className="text-lg text-text/90 text-center md:text-left md:flex-1">{award}</p>
               </div>
             </motion.div>
           ))}

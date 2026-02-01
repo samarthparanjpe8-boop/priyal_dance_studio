@@ -193,7 +193,7 @@ const InterestModal = ({ onClose }) => {
             </p>
           </motion.div>
         ) : (
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form onSubmit={handleSubmit} className="space-y-4 max-w-xl mx-auto">
             <div>
               <label className="block text-text/80 mb-2">Name *</label>
               <input

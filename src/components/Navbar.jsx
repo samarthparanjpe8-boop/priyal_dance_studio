@@ -10,7 +10,7 @@ const Navbar = ({ activeSection, scrollToSection }) => {
     { id: 'portfolio', label: 'Portfolio' },
     { id: 'gallery', label: 'Gallery' },
     { id: 'awards', label: 'Awards' },
-    { id: 'events', label: 'Events' },
+    { id: 'events', label: 'Learnings' },
     { id: 'contact', label: 'Contact' },
   ]
 
