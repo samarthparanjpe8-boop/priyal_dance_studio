@@ -101,7 +101,26 @@ npm run dev
 npm run build
 ```
 
-The built files will be in the `dist` directory.
+The built files will be in the `docs` directory (Vite is configured to build into `docs/` so GitHub Pages can serve directly from the `main` branch).
+
+## Deployment to GitHub Pages
+
+You can publish this site using GitHub Pages from the `main` branch (`/docs` folder):
+
+1. Run the build:
+```bash
+npm run build
+```
+2. Commit the generated `docs/` folder to the `main` branch:
+```bash
+git add docs
+git commit -m "chore: update docs (build)"
+git push origin main
+```
+3. In your GitHub repository, go to **Settings → Pages** and set **Source** to **main branch /docs folder**.
+4. Wait a minute — your site will be available at `https://<your-username>.github.io/<your-repo>/` (or your custom domain if configured).
+
+> Note: A `.nojekyll` file has been added to `docs/` to prevent GitHub Pages from ignoring files that start with `_`.
 
 ## Deployment to Vercel
 
