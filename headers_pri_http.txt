@@ -1,0 +1,41 @@
+HTTP/1.1 301 Moved Permanently
+Connection: keep-alive
+Content-Length: 162
+Server: GitHub.com
+Content-Type: text/html
+Location: http://www.priyaldancestudio.com/
+X-GitHub-Request-Id: 4C2D:09F3:16FD49:1A7F9E:697F8E32
+Accept-Ranges: bytes
+Age: 0
+Date: Sun, 01 Feb 2026 17:32:34 GMT
+Via: 1.1 varnish
+X-Served-By: cache-bom-vanm7210065-BOM
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1769967155.669064,VS0,VE227
+Vary: Accept-Encoding
+X-Fastly-Request-ID: f699bcb23279d1925d4ac4e28208d0bb3e0dda6e
+
+HTTP/1.1 200 OK
+Connection: keep-alive
+Content-Length: 748
+Server: GitHub.com
+Content-Type: text/html; charset=utf-8
+Last-Modified: Sun, 01 Feb 2026 17:32:14 GMT
+Access-Control-Allow-Origin: *
+ETag: "697f8e1e-2ec"
+expires: Sun, 01 Feb 2026 17:42:35 GMT
+Cache-Control: max-age=600
+x-proxy-cache: MISS
+X-GitHub-Request-Id: DD11:14DA3E:2219E1:2763FE:697F8E33
+Accept-Ranges: bytes
+Age: 0
+Date: Sun, 01 Feb 2026 17:32:35 GMT
+Via: 1.1 varnish
+X-Served-By: cache-maa10245-MAA
+X-Cache: MISS
+X-Cache-Hits: 0
+X-Timer: S1769967155.133958,VS0,VE234
+Vary: Accept-Encoding
+X-Fastly-Request-ID: a9a8b7474e8c37599e8f5323c276f097e1841c03
+
