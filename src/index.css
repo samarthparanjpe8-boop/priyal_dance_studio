@@ -21,18 +21,19 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Glassmorphism utility */
 .glass {
-  background: rgba(30, 6, 56, 0.4);
+  /* Light, soft purple glass for cards */
+  background: rgba(188, 94, 255, 0.12);
   backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(20px);
-  border: 1px solid rgba(188, 94, 255, 0.2);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  border: 1px solid rgba(188, 94, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(188, 94, 255, 0.06);
 }
 
 /* When a .glass is nested inside another .glass, reduce border/shadow to avoid heavy double borders on small screens */
 .glass .glass {
-  border-color: rgba(188, 94, 255, 0.07);
-  box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.30);
-  background: rgba(30, 6, 56, 0.34);
+  border-color: rgba(188, 94, 255, 0.12);
+  box-shadow: 0 6px 20px 0 rgba(188, 94, 255, 0.05);
+  background: rgba(188, 94, 255, 0.10);
 }
 
 /* Scrollbar styling */
